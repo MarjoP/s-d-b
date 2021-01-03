@@ -1,0 +1,16 @@
+<section class="content">
+<input
+    type="text"
+    class="form-control"
+    [(ngModel)]="userName"
+    >
+
+<p>{{ userName }}</p>
+
+<button 
+    class="btn btn-success"
+    [disabled] = "!userName"
+    (click) = "onPressClearContent()"
+>ClickMeeee</button>
+
+</section>
